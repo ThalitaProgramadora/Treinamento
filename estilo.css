@@ -1,0 +1,63 @@
+body{
+	background: #5882FA url('imagens/fundo.png');
+	font: 16px Arial, Helvetica, sans-serif;
+}
+
+#principal {
+	width: 900px;
+}
+
+#menu {
+	background: #0A2A0A;
+	padding: 18px;
+}
+
+#conteudo {
+	background: #D8D8D8;
+	padding: 10px;
+	margin:0 30px;
+}
+
+#rodape {
+	text-align: center;
+}
+
+a {
+	color: #F2F2F2;
+	text-decoration: none;
+	font-weight: bold;
+	padding: 5px;
+}
+
+.centralizar {
+	text-align: center;
+}
+
+.img-campanha {
+	border: 10px solid #c3c3ae;
+	width:45%;
+	margin:0 25%;
+	
+	
+}
+.biografia {
+	border: 10px solid #c3c3ae;
+	width:45%;
+}
+
+h1 {
+	color: #04B486;
+	font-size: 1.5em;
+	font-style:italic;
+	font-weight:bold;
+	
+}
+p{
+	color: #848484;
+	font-size: 1.2em;
+	border-width:thick;
+	border-style:dotted;
+	border-color:#c3c3ae
+	
+}
+
