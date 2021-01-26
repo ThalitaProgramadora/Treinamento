@@ -19,6 +19,7 @@ public class Exerc06 {
           y1 = pontos.nextInt();
           System.out.println("Digite o valor de Y2: ");
           y2 = pontos.nextInt();
+          System.out.println("fazendo testes");
           
          d =Math.sqrt((Math.pow((x2-x1), 2)+Math.pow((y2-y1),2)));
          JOptionPane.showMessageDialog(null,"O resultado da equação é: "+d);
