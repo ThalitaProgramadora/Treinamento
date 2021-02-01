@@ -10,28 +10,29 @@ public class Hutflix {
 		String humor,q, h, o, pizza, pizza1, pizza2;
 		int inum = 1, opcao, op;
 
+		
+		nome = JOptionPane.showInputDialog("Digite seu nome:");
+
+		endereco = JOptionPane.showInputDialog("Digite seu endereço:");
+		t = JOptionPane.showInputDialog("Digite seu telefone:");
+		telefone = Integer.parseInt(t);
+		f = JOptionPane.showInputDialog(
+				"Por favor, qual seu filme preferido?\n1 - Se beber não case \n 2 - os vingadores\n 3-O iluminado\n4-Titanic\n5-Harry Potter");
+		filmes = Integer.parseInt(f);
 		while (inum <= 5) {
-			nome = JOptionPane.showInputDialog("Digite seu nome:");
-
-			endereco = JOptionPane.showInputDialog("Digite seu endereço:");
-			t = JOptionPane.showInputDialog("Digite seu telefone:");
-			telefone = Integer.parseInt(t);
-			f = JOptionPane.showInputDialog(
-					"Por favor, qual seu filme preferido?\n1 - Se beber não case \n 2 - os vingadores\n 3-O iluminado\n4-Titanic\n5-Harry Potter");
-			filmes = Integer.parseInt(f);
-
+			
 			// filme se beber não case
 			if (filmes == 1) {
 				o = JOptionPane.showInputDialog(
 						"Escolha um caracteristica:\nSe beber não case:\n1)imaginativos\n2)originais\n3)criativos ");
 				opcao = Integer.parseInt(o);
 				q = JOptionPane.showInputDialog("Gostaria de 1 ou 2 pizza? levando 2 ganha um refri ! ");
-				op = Integer.parseInt(o);
+				op = Integer.parseInt(q);
 				if (opcao == 1 && op == 1) {
 					pizza = JOptionPane.showInputDialog("Digite uma pizza:\nbaiana\nbacon\nchocolate com confeitos");
 					JOptionPane.showMessageDialog(null,
 							" Será enviado para o endereço " + endereco + " a pizza:" + pizza);
-				}
+				}else
 				if (opcao == 1 && op == 2) {
 					pizza1 = JOptionPane
 							.showInputDialog("Digite a primeira pizza:\nbaiana\\nbacon\\nchocolate com confeitos");
@@ -40,32 +41,36 @@ public class Hutflix {
 							.showInputDialog("Digite a segunda pizza:\nbaiana\\nbacon\\nchocolate com confeitos");
 					JOptionPane.showMessageDialog(null, " Será enviado para o endereço " + endereco + " a pizza1:"
 							+ pizza1 + " e a pizza2:" + pizza2);
-				}
+				}else
 				// opcao2
 				if (opcao == 2 && op == 1) {
 					pizza = JOptionPane.showInputDialog("Digite uma pizza:\nMussarela\nCalabresa\nAlho");
 					JOptionPane.showMessageDialog(null,
 							" Será enviado para o endereço " + endereco + " a pizza:" + pizza);
 
-				}
+				}else
 				if (opcao == 2 && op == 2) {
 					pizza1 = JOptionPane.showInputDialog("Digite a primeira pizza:\nMuçarela\nCalabresa\nAlho)");
 					pizza2 = JOptionPane.showInputDialog("Digite a segunda pizza:\nMuçarela\nCalabresa\nAlho)");
 					JOptionPane.showMessageDialog(null, " Será enviado para o endereço " + endereco + " a pizza1:"
 							+ pizza1 + " e a pizza2:" + pizza2);
-				}
+				}else
 				// opcao3
 				if (opcao == 3 && op == 1) {
 					pizza = JOptionPane.showInputDialog("Digite uma pizza:\nAlho\nMuçarela\nBacon");
 					JOptionPane.showMessageDialog(null,
 							" Será enviado para o endereço " + endereco + " a pizza: " + pizza);
-				}
+				}else
 				if (opcao == 3 && op == 2) {
 					pizza1 = JOptionPane
 							.showInputDialog("Digite a primeira pizza:\nAlho\nMuçarela\nBacon");
 					pizza2 = JOptionPane.showInputDialog("Digite a segunda pizza:\nAlho\nMussarela\nBacon");
 					JOptionPane.showMessageDialog(null, " Será enviado para o endereço " + endereco + " a pizza1: "
 							+ pizza1 + " e a pizza2: " + pizza2);
+				}else {
+					
+					JOptionPane.showMessageDialog(null, "Valor inválido");
+					System.exit(0);
 				}
 			}
 			// filme os vingadores
@@ -80,7 +85,7 @@ public class Hutflix {
 					pizza = JOptionPane.showInputDialog("Digite uma pizza:\nfrango com catupíry\nrucula com tomate seco\nromeu e julieta\n");
 					JOptionPane.showMessageDialog(null,
 							" Será enviado para o endereço " + endereco + " a pizza: " + pizza);
-				}
+				}else
 				if (opcao == 1 && op == 2) {
 					pizza1 = JOptionPane.showInputDialog("Digite a segunda pizza:\nfrango com catupíry\nrucula com tomate seco\nromeu e julieta\n");
 
@@ -88,32 +93,35 @@ public class Hutflix {
 							.showInputDialog("Digite a segunda pizza:\nfrango com catupíry\nrucula com tomate seco\nromeu e julieta\n");
 					JOptionPane.showMessageDialog(null, " Será enviado para o endereço " + endereco + " a pizza1: "
 							+ pizza1 + " e a pizza2 :" + pizza2);
-				}
+				}else
 				// opcao2
 				if (opcao == 2 && op == 1) {
 					pizza = JOptionPane.showInputDialog("Digite uma pizza:\nAliche\nPortuguesa\nNapolitano\n");
 					JOptionPane.showMessageDialog(null,
 							" Será enviado para o endereço " + endereco + " a pizza: " + pizza);
 
-				}
+				}else
 				if (opcao == 2 && op == 2) {
 					pizza1 = JOptionPane.showInputDialog("Digite a primeira pizza:\nAliche\nPortuguesa\nNapolitano\n)");
 					pizza2 = JOptionPane.showInputDialog("Digite a segunda pizza:\nAliche\nPortuguesa\nNapolitano\n");
 					JOptionPane.showMessageDialog(null, " Será enviado para o endereço " + endereco + " a pizza1: "
 							+ pizza1 + " e a pizza2: " + pizza2);
-				}
+				}else
 				// opcao3
 				if (opcao == 3 && op == 1) {
 					pizza = JOptionPane.showInputDialog("Digite uma pizza:\nFrango catupiry\nbacon\nmargarita");
 					JOptionPane.showMessageDialog(null,
 							" Será enviado para o endereço " + endereco + " a pizza: " + pizza);
-				}
+				}else
 				if (opcao == 3 && op == 2) {
 					pizza1 = JOptionPane
 							.showInputDialog("Digite a primeira pizza:\nFrango catupiry\nbacon\nmargarita)");
 					pizza2 = JOptionPane.showInputDialog("Digite a segunda pizza:\nFrango catupiry\nbacon\nmargarita)");
 					JOptionPane.showMessageDialog(null, " Será enviado para o endereço " + endereco + " a pizza1: "
 							+ pizza1 + " e a pizza2: " + pizza2);
+				}else {
+					JOptionPane.showMessageDialog(null, "Valor inválido");
+					System.exit(0);
 				}
 			}
 			// filme o iluminado
@@ -127,7 +135,7 @@ public class Hutflix {
 					pizza = JOptionPane.showInputDialog("Digite uma pizza:\nmuçarela\ncalabresa\nalho");
 					JOptionPane.showMessageDialog(null,
 							" Será enviado para o endereço " + endereco + " a pizza: " + pizza);
-				}
+				}else
 				if (opcao == 1 && op == 2) {
 					pizza1 = JOptionPane
 							.showInputDialog("Digite a primeira pizza:\nmuçarela\ncalabresa\nalho");
@@ -136,45 +144,48 @@ public class Hutflix {
 							.showInputDialog("Digite a segunda pizza:\nmuçarela\ncalabresa\nalho");
 					JOptionPane.showMessageDialog(null, " Será enviado para o endereço " + endereco + " a pizza1: "
 							+ pizza1 + " e a pizza2: " + pizza2);
-				}
+				}else
 				// opcao2
 				if (opcao == 2 && op == 1) {
 					pizza = JOptionPane.showInputDialog("Digite uma pizza:\nquatro queijos\nbaiana\ncalifornia");
 					JOptionPane.showMessageDialog(null,
 							" Será enviado para o endereço " + endereco + " a pizza: " + pizza);
 
-				}
+				}else
 				if (opcao == 2 && op == 2) {
 					pizza1 = JOptionPane.showInputDialog("Digite a primeira pizza:\nquatro queijos\nbaiana\ncalifornia)");
 					pizza2 = JOptionPane.showInputDialog("Digite a segunda pizza:\nquatro queijos\nbaiana\ncalifornia");
 					JOptionPane.showMessageDialog(null, " Será enviado para o endereço" + endereco + " a pizza1: "
 							+ pizza1 + " e a pizza2: " + pizza2);
-				}
+				}else
 				// opcao3
 				if (opcao == 3 && op == 1) {
 					pizza = JOptionPane.showInputDialog("Digite uma pizza:\nbrigadeiro\nlombo\nquatro queijos");
 					JOptionPane.showMessageDialog(null,
 							" Será enviado para o endereço " + endereco + " a pizza: " + pizza);
-				}
+				}else
 				if (opcao == 3 && op == 2) {
 					pizza1 = JOptionPane
 							.showInputDialog("Digite a primeira pizza:\nbrigadeiro\nlombo\nquatro queijos)");
 					pizza2 = JOptionPane.showInputDialog("Digite a segunda pizza:\nbrigadeiro\nlombo\nquatro queijos");
 					JOptionPane.showMessageDialog(null, " Será enviado para o endereço " + endereco + " a pizza1: "
 							+ pizza1 + " e a pizza2: " + pizza2);
-				}
+				}else
 				// opcao4
 				if (opcao == 4 && op == 1) {
 					pizza = JOptionPane.showInputDialog("Digite uma pizza:\nmuçarela\ncalabresa\nnapolitano");
 					JOptionPane.showMessageDialog(null,
 							" Será enviado para o endereço " + endereco + " a pizza: " + pizza);
-				}
+				}else
 				if (opcao == 4 && op == 2) {
 					pizza1 = JOptionPane
 							.showInputDialog("Digite a primeira pizza:\nmuçarela\ncalabresa\nnapolitano");
 					pizza2 = JOptionPane.showInputDialog("Digite a segunda pizza:\nmuçarela\ncalabresa\nnapolitano");
 					JOptionPane.showMessageDialog(null, " Será enviado para o endereço " + endereco + " a pizza1: "
 							+ pizza1 + " e a pizza2: " + pizza2);
+				}else {
+					JOptionPane.showMessageDialog(null, "Valor inválido");
+					System.exit(0);
 				}
 			}
 			// filme titanica
@@ -188,7 +199,7 @@ public class Hutflix {
 					pizza = JOptionPane.showInputDialog("Digite uma pizza:\nbaiana\nbacon\nchocolate com confeitos");
 					JOptionPane.showMessageDialog(null,
 							" Será enviado para o endereço " + endereco + " a pizza: " + pizza);
-				}
+				}else
 				if (opcao == 1 && op == 2) {
 					pizza1 = JOptionPane
 							.showInputDialog("Digite a primeira pizza:\nbaiana\\nbacon\\nchocolate com confeitos");
@@ -197,32 +208,35 @@ public class Hutflix {
 							.showInputDialog("Digite a segunda pizza:\nbaiana\\nbacon\\nchocolate com confeitos");
 					JOptionPane.showMessageDialog(null, " Será enviado para o endereço " + endereco + " a pizza1: "
 							+ pizza1 + " e a pizza2: " + pizza2);
-				}
+				}else
 				// opcao2
 				if (opcao == 2 && op == 1) {
 					pizza = JOptionPane.showInputDialog("Digite uma pizza:\nMussarela\nCalabresa\nAlho");
 					JOptionPane.showMessageDialog(null,
 							" Será enviado para o endereço " + endereco + " a pizza: " + pizza);
 
-				}
+				}else
 				if (opcao == 2 && op == 2) {
 					pizza1 = JOptionPane.showInputDialog("Digite a primeira pizza:\nMussarela\nCalabresa\nAlho)");
 					pizza2 = JOptionPane.showInputDialog("Digite a segunda pizza:\nMussarela\nCalabresa\nAlho)");
 					JOptionPane.showMessageDialog(null, " Será enviado para o endereço " + endereco + " a pizza1: "
 							+ pizza1 + " e a pizza2: " + pizza2);
-				}
+				}else
 				// opcao3
 				if (opcao == 3 && op == 1) {
 					pizza = JOptionPane.showInputDialog("Digite uma pizza:\nFrango catupiry\nbacon\nmargarita");
 					JOptionPane.showMessageDialog(null,
 							" Será enviado para o endereço " + endereco + " a pizza: " + pizza);
-				}
+				}else
 				if (opcao == 3 && op == 2) {
 					pizza1 = JOptionPane
 							.showInputDialog("Digite a primeira pizza:\nFrango catupiry\nbacon\nmargarita)");
 					pizza2 = JOptionPane.showInputDialog("Digite a segunda pizza:\nFrango catupiry\nbacon\nmargarita)");
 					JOptionPane.showMessageDialog(null, " Será enviado para o endereço " + endereco + " a pizza1: "
 							+ pizza1 + " e a pizza2: " + pizza2);
+				}else {
+					JOptionPane.showMessageDialog(null, "Valor inválido");
+					System.exit(0);
 				}
 			}
 			// filme harry potter
@@ -236,7 +250,7 @@ public class Hutflix {
 					pizza = JOptionPane.showInputDialog("Digite uma pizza:\nbaiana\nbacon\nchocolate com confeitos");
 					JOptionPane.showMessageDialog(null,
 							" Será enviado para o endereço" + endereco + " a pizza: " + pizza);
-				}
+				}else
 				if (opcao == 1 && op == 2) {
 					pizza1 = JOptionPane
 							.showInputDialog("Digite a primeira pizza:\nbaiana\\nbacon\\nchocolate com confeitos");
@@ -245,32 +259,35 @@ public class Hutflix {
 							.showInputDialog("Digite a segunda pizza:\nbaiana\\nbacon\\nchocolate com confeitos");
 					JOptionPane.showMessageDialog(null, " Será enviado para o endereço" + endereco + " a pizza1: "
 							+ pizza1 + " e a pizza2: " + pizza2);
-				}
+				}else
 				// opcao2
 				if (opcao == 2 && op == 1) {
 					pizza = JOptionPane.showInputDialog("Digite uma pizza:\nMussarela\nCalabresa\nAlho");
 					JOptionPane.showMessageDialog(null,
 							" Será enviado para o endereço " + endereco + " a pizza: " + pizza);
 
-				}
+				}else
 				if (opcao == 2 && op == 2) {
 					pizza1 = JOptionPane.showInputDialog("Digite a primeira pizza:\nMussarela\nCalabresa\nAlho)");
 					pizza2 = JOptionPane.showInputDialog("Digite a segunda pizza:\nMussarela\nCalabresa\nAlho)");
 					JOptionPane.showMessageDialog(null, " Será enviado para o endereço " + endereco + " a pizza1: "
 							+ pizza1 + " e a pizza2: " + pizza2);
-				}
+				}else
 				// opcao3
 				if (opcao == 3 && op == 1) {
 					pizza = JOptionPane.showInputDialog("Digite uma pizza:\nFrango catupiry\nbacon\nmargarita");
 					JOptionPane.showMessageDialog(null,
 							" Será enviado para o endereço " + endereco + " a pizza: " + pizza);
-				}
+				}else
 				if (opcao == 3 && op == 2) {
 					pizza1 = JOptionPane
 							.showInputDialog("Digite a primeira pizza:\nFrango catupiry\nbacon\nmargarita)");
 					pizza2 = JOptionPane.showInputDialog("Digite a segunda pizza:\nFrango catupiry\nbacon\nmargarita)");
 					JOptionPane.showMessageDialog(null, " Será enviado para o endereço " + endereco + " a pizza1: "
 							+ pizza1 + " e a pizza2: " + pizza2);
+				}else {
+					JOptionPane.showMessageDialog(null, "Valor inválido");
+					System.exit(0);
 				}
 			}
 
