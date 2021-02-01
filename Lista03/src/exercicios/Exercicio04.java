@@ -22,7 +22,7 @@ public class Exercicio04 {
 		int inum=1,idade=0,genero=0,opcao=0,calmosP=0,nervosasMulheres=0,agressivosHomens=0;
 		int calmosOutros=0,nervososQuarenta=0,calmosAdolescentes=0;
 		
-        while(inum <=  150) {
+        while(inum <=  1) {
         	num = JOptionPane.showInputDialog("Insira uma idade:");
             idade = Integer.parseInt(num);
             num = JOptionPane.showInputDialog("Por favor, qual seu genero?\n1 - Feminino \n 2 - Masculino\n 3 - Outros:\n");
