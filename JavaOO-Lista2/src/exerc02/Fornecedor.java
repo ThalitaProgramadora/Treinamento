@@ -38,7 +38,10 @@ public class Fornecedor extends Pessoa{
     	divida = doc.nextDouble();
     	
     	saldo = credito-divida;
-    	System.out.println("Seu saldo atual é: "+saldo);
+    	System.out.println("***************************************");
+    	System.out.println("Seu credito disponivel é de: "+credito);
+    	System.out.println("\nSua divida pe de: "+divida);
+    	System.out.println("\nSeu saldo ficou: "+saldo);
     	return saldo;
     }   
 }
